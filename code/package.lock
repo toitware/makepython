@@ -1,0 +1,59 @@
+prefixes:
+  certificate_roots: toit-cert-roots
+  dht11: DHT11
+  dhtxx: toit-dhtxx
+  ds18b20: toit-ds18b20
+  hc_sr04: toit-hc-sr04
+  http: pkg-http
+  one_wire: toitware/toit-1-wire
+  pixel_display: toit-pixel-display
+  pixel_strip: toit-pixel-strip
+  servo: servo
+  ssd1306: toit-ssd1306
+packages:
+  DHT11:
+    url: github.com/nilwes/DHT11
+    version: 1.1.0
+    hash: 4d00e1ba016e53026b2f5e989f8bafad9c6ca847
+  code/toit-1-wire:
+    path: /home/flo/code/toit-1-wire
+  pkg-http:
+    url: github.com/toitlang/pkg-http
+    version: 1.8.0
+    hash: 91b51dd6bbb9ce04df3c9c9fabaded9de90fb0c9
+  servo:
+    url: github.com/andersjohnsen/servo
+    version: 1.1.0
+    hash: 7eff254a70ee25b4b3651c33587b4661fd44768a
+  toit-cert-roots:
+    url: github.com/toitware/toit-cert-roots
+    version: 1.3.2
+    hash: 288547039d8a3797330064e91d8c79ad16313545
+  toit-dhtxx:
+    path: /home/flo/code/toit-dhtxx
+  toit-ds18b20:
+    path: /home/flo/code/toit-ds18b20
+    prefixes:
+      one_wire: code/toit-1-wire
+  toit-hc-sr04:
+    url: github.com/lask/toit-hc-sr04
+    version: 1.2.0
+    hash: 38349cf1a6cf11daa38354b561aa051d86a07d67
+  toit-pixel-display:
+    url: github.com/toitware/toit-pixel-display
+    version: 1.5.0
+    hash: 359a4a5734b350f032cf81b971e5a065c73f6588
+  toit-pixel-strip:
+    url: github.com/toitware/toit-pixel-strip
+    version: 0.1.1
+    hash: 389000d907db2aa7bc5c21d93fa4c4299815e922
+  toit-ssd1306:
+    url: github.com/toitware/toit-ssd1306
+    version: 1.3.0
+    hash: 18b1a3d1a4d344ad75813013e972a0deb4045371
+    prefixes:
+      pixel_display: toit-pixel-display
+  toitware/toit-1-wire:
+    url: github.com/toitware/toit-1-wire
+    version: 1.0.1
+    hash: 17d0533a96eb2d35a7ae36fd2788a8ff368e4b93
