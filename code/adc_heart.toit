@@ -28,8 +28,8 @@ class AdaptiveChart:
       context /GraphicsContext
       .width /int
       .height /int
-      --initial_value/float:
-    remembered_ = List width/2: initial_value
+      --initial_value /float:
+    remembered_ = List (width / 2): initial_value
     half_height := height / 2
     bars_ = List width:
       display.line context it half_height it (half_height + 1)

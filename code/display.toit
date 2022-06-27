@@ -21,9 +21,10 @@ main:
   bus := i2c.Bus --sda=sda --scl=scl --frequency=frequency
 
   devices := bus.scan
-  if not devices.contains SSD1306_ID: throw "No SSD1306 display found"
+  if not devices.contains SSD1306.I2C_ADDRESS:
+    throw "No SSD1306 display found"
 
-  driver := SSD1306.i2c (bus.device SSD1306_ID)
+  driver := SSD1306.i2c (bus.device SSD1306.I2C_ADDRESS)
   display := TwoColorPixelDisplay driver
   display.background = BLACK
 

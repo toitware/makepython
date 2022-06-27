@@ -5,7 +5,9 @@ prefixes:
   ds18b20: toit-ds18b20
   hc_sr04: toit-hc-sr04
   http: pkg-http
+  ntp: pkg-ntp
   one_wire: toit-1-wire
+  pictogrammers_icons: toit-icons-pictogrammers
   pixel_display: toit-pixel-display
   pixel_strip: toit-pixel-strip
   servo: servo
@@ -17,16 +19,20 @@ packages:
     hash: 4d00e1ba016e53026b2f5e989f8bafad9c6ca847
   pkg-http:
     url: github.com/toitlang/pkg-http
-    version: 1.8.0
-    hash: 91b51dd6bbb9ce04df3c9c9fabaded9de90fb0c9
+    version: 1.8.1
+    hash: 8cedb36badde5c91a3ed38b9d0c2aaa1fc939524
+  pkg-ntp:
+    url: github.com/toitlang/pkg-ntp
+    version: 1.0.0
+    hash: 1c3cc4a4819f459393f00efc576f66f838665719
   servo:
     url: github.com/andersjohnsen/servo
     version: 1.1.0
     hash: 7eff254a70ee25b4b3651c33587b4661fd44768a
   toit-1-wire:
     url: github.com/toitware/toit-1-wire
-    version: 1.0.1
-    hash: 17d0533a96eb2d35a7ae36fd2788a8ff368e4b93
+    version: 1.1.0
+    hash: d35ec32abeb41b1641a1572fa4a524e03666a0e9
   toit-cert-roots:
     url: github.com/toitware/toit-cert-roots
     version: 1.3.2
@@ -41,10 +47,14 @@ packages:
     url: github.com/lask/toit-hc-sr04
     version: 1.2.0
     hash: 38349cf1a6cf11daa38354b561aa051d86a07d67
+  toit-icons-pictogrammers:
+    url: github.com/toitware/toit-icons-pictogrammers
+    version: 1.0.0
+    hash: 5ac660cc480d5da1fec72e1b24d425ce978419b7
   toit-pixel-display:
     url: github.com/toitware/toit-pixel-display
-    version: 1.5.0
-    hash: 359a4a5734b350f032cf81b971e5a065c73f6588
+    version: 1.6.0
+    hash: 39de82f680e27961e39ca24ba94520f21759370c
   toit-pixel-strip:
     url: github.com/toitware/toit-pixel-strip
     version: 0.1.1
