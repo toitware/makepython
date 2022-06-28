@@ -29,7 +29,10 @@ main:
   display.background = BLACK
 
   sans := Font.get "sans10"
-  sans_context := display.context --landscape --font=sans --color=WHITE
+  sans_context := display.context
+      --landscape
+      --font=sans
+      --color=WHITE
   display.text sans_context 30 20 "Toit"
   date := display.text sans_context 30 40 ""
   time_text := display.text sans_context 30 60 ""
