@@ -8,13 +8,14 @@ dependencies:
   dhtxx:
     path: /home/flo/code/toit-dhtxx
   ds18b20:
-    path: /home/flo/code/toit-ds18b20
+    url: github.com/toitware/toit-ds18b20
+    version: ^1.0.0
   hc_sr04:
     url: github.com/lask/toit-hc-sr04
     version: ^1.2.0
   http:
     url: github.com/toitlang/pkg-http
-    version: ^1.8.1
+    version: ^1.9.0
   ntp:
     url: github.com/toitlang/pkg-ntp
     version: ^1.0.0
