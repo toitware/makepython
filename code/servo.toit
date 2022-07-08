@@ -4,8 +4,10 @@ import gpio.pwm
 main:
   servo := gpio.Pin 14
   generator := pwm.Pwm --frequency=50
+
+  // Start with the half-way angle.
   channel := generator.start servo --duty_factor=0.075
-  sleep --ms=10 // https://github.com/toitlang/toit/issues/518
+  sleep --ms=1500
 
   // Max angle.
   print "max"
