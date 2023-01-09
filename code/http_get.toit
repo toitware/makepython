@@ -5,7 +5,7 @@ import encoding.json
 
 URL ::= "api.aakhilv.me"
 PATH ::= "/fun/facts"
-CERTIFICATE ::= certificate_roots.BALTIMORE_CYBERTRUST_ROOT
+CERTIFICATE ::= certificate_roots.ISRG_ROOT_X1
 
 main:
   network := net.open
